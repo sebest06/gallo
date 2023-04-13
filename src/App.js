@@ -17,16 +17,6 @@ import React, { useState, useEffect } from "react";
 
 function App() {
 
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = "/assert/magictouch.js";
-    script.async = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    }
-  }, []);
-
   return (
     <div className="App">
       <header className="App-header">
